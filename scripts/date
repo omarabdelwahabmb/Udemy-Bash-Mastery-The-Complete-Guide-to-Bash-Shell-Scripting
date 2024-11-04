@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#Date Created  11/10/2023
+#Date Modified 11/10/2023
+#Author: Omar AbdelWahab
+
+#Description:
+#Debugging
+
+date
+echo "started script at: $(date)" 
+exit 0

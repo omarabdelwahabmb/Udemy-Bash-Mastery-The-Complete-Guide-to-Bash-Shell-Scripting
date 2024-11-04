@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#Date Created  17/09/2023
+#Date Modified 17/09/2023
+#Author: Omar AbdelWahab
+
+#Description:
+#getextentions
+
+read -p "What is your first name?: " fname
+read -p "What is your surname/family name?: " sname
+
+echo -e "\nExtension Number must be exactly 4 digits."
+echo -e "The first 4 digits will be considered as your input."
+read -N 4 -p "What is your extension number?: " ext
+
+echo -e "\nAccess Code must be exactly 4 digits."
+echo -e "The first 4 digits will be considered as your input."
+read -s -N 4 -p"What access code would you like to use when dialing in?: " acode
+echo -e "\n"
+
+echo "$fname,$sname,$ext,$acode" >> extensions.csv
+
+exit 0

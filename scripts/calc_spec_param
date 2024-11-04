@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#Date Created  12/09/2023
+#Date Modified 12/09/2023
+#Author: Omar AbdelWahab
+
+#Description:
+#Special Paramaters Calculator
+
+echo $(( $@ ))

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Date Created  12/10/2023
+#Date Modified 15/10/2023
+#Author: Omar AbdelWahab
+
+#Description:
+#headers
+#The alias couldn't run in this script
+
+readarray -t urls < "../6.1 urls.txt"
+
+for url in ${urls[@]};
+do
+	curl --head "$url" > "../headers/$(echo "$url" | cut -d \. -f 2).txt"
+done
+
+exit 0

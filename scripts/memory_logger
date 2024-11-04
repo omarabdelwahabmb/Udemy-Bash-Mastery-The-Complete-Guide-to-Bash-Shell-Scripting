@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#Date Created  18/09/2023
+#Date Modified 18/09/2023
+#Author: Omar AbdelWahab
+
+#Description:
+#memory_logger
+
+performance="$HOME/Omar/Udemy - Bash Mastery The Complete Guide to Bash Shell Scripting 2021-4/performance"
+
+if [ -d $performance ]; then
+	echo "Directory already exists."
+else
+	mkdir "$performance"
+	echo "Directory Has been created."
+fi
+
+free >> "$performance/memory.log"
+
+exit 0
